@@ -34,11 +34,31 @@
             font-family: sans-serif;
             color: #4a4a4a;
         }
+        .button {
+            background-color: #4980d2;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .two-columns {
+            text-align: center;
+            font-size: 0;
+            padding: 40px 0;
+        }
+        .two-columns .column {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            vertical-align: top;
+        }
     </style>
 </head>
 <body>
     <center>
         <table class="main" width="100%">
+            <!-- 1 centered text -->
             <tr>
                 <td>
                     <table>
@@ -46,24 +66,61 @@
                     </table>
                 </td>
             </tr>
+            <!-- end of (1) centered text  -->
+            <!-- 2 full width banner -->
             <tr>
                 <td>
                     <img src="./images/Adora-banner.png" alt="" width="600" style="max-width: 100%;">
                 </td>
             </tr>
-        </table>
-    </center>
-    <!-- <center class="wrapper">
-        <table class="main" width="100%">
+            <!-- end of (2) full width banner  -->
+            <!-- 3 two columns -->
             <tr>
-                <td>
+                <td style="padding-bottom: 40px;">
                     <table width="100%">
-                        <h1>test</h1>
+                        <tr>
+                            <td class="two-columns">
+                                <!-- 3.1 first of two columns -->
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <img src="./images/hallway-802068_1920.jpg" alt="" width="260" style="max-width: 260px;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- 3.2 second of two columns  -->
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <p style="font-size: 17px; font-weight: bold;">Lorem ipsum dolor sit amet</p>
+                                                        <p style="padding-bottom: 15px;">
+                                                            Quisque a augue nec velit bibendum ullamcorper vel ut risus. Praesent mollis vitae purus vel dignissim.
+                                                        </p>
+                                                        <a href="#" class="button">Button</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end of 3.2 -->
+                            </td>
+                        </tr>
                     </table>
                 </td>
             </tr>
+            <!-- end of (3) two columns -->
         </table>
-    </center> -->
-    
+    </center>
+   
 </body>
 </html>
